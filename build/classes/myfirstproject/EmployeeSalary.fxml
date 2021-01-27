@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="500.0" prefWidth="668.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myfirstproject.EmployeeSalaryController">
+   <children>
+      <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#searchEmpPrev" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: #4CBB17;" text="prev">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button layoutX="564.0" layoutY="7.0" mnemonicParsing="false" onAction="#homePage" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: blue;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="99.0" layoutY="103.0" prefHeight="48.0" prefWidth="110.0" text="Employee ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="s_id" alignment="CENTER" layoutX="227.0" layoutY="103.0" onAction="#EmpSalaryID" prefHeight="48.0" prefWidth="285.0" promptText="Enter Employee Id">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Button fx:id="s_show" layoutX="533.0" layoutY="103.0" mnemonicParsing="false" onAction="#empSalarySearch" prefHeight="48.0" prefWidth="110.0" style="-fx-background-color: green;" text="Show" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <TextField fx:id="s_details" layoutX="93.0" layoutY="239.0" onAction="#showSalaryAction" prefHeight="186.0" prefWidth="544.0" />
+      <Label alignment="CENTER" layoutX="110.0" layoutY="7.0" prefHeight="48.0" prefWidth="440.0" style="-fx-background-color: yellow;" text="Employee's  Salary">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="186.0" prefHeight="48.0" prefWidth="79.0" text="Salary : ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
